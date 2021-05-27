@@ -189,7 +189,7 @@ if __name__ == "__main__":
                 exit(1)
             else:
                 prompt("!", "Detected PAM Version: '{}'".format(pam_version))
-        dl_url = "http://www.linux-pam.org/library/Linux-PAM-{}.tar.gz"
+        dl_url = "https://ftp.osuosl.org/pub/blfs/conglomeration/Linux-PAM/Linux-PAM-{}.tar.xz"
         src_dir = "/tmp/Linux-PAM-{}".format(pam_version)
         prompt("!", "Downloading Pam: '{}'".format(pam_version), "\r")
         if download_file(dl_url.format(pam_version), "/tmp/linux_pam.tar"):
